@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html {
+    background: black;
+    height: 100vh;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+
+
+    height: 100%;
+}
