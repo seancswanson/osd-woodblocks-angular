@@ -128,69 +128,7 @@ header {
 
 /* NAVIGATION BLOCK */
 
-.text-content-nav {
-  display: flex;
-}
 
-.text-content-nav button {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-
-  flex: 1;
-
-  cursor: pointer;
-  transition: 0.3s all ease;
-  text-transform: uppercase;
-
-  color: white;
-  border: 2px solid rgba(255,255,255,.4);
-  border-bottom: 0;
-  border-radius: 3px;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 0px 1px;
-}
-
-.text-content-nav button:hover {
-  border: 2px solid rgba(255,255,255,.9);
-  border-bottom: 0;
-
-}
-
-.text-content-nav button:focus {
-  filter: invert(1);
-}
-
-.gallery-icon {
-  display: inline-block;
-
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-
-  background-size: cover;
-}
-
-.gallery-icon-black {
-  margin: 0;
-  margin-left: 3px;
-
-  background-image: url("../../assets/icons/gallery-black.svg");
-}
-
-.gallery-icon-white {
-  background-image: url("../../assets/icons/gallery.svg");
-}
-
-.nav-button {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-
-  height: 100%;
-}
 
 /* TEXT CONTENT BLOCK */
 
@@ -204,10 +142,6 @@ header {
   background-color: #fff;
   background-image: url("../../assets/bg/paper.png");
 
-}
-
-.bio-section {
-  display: none;
 }
 
 .text-content-wrapper p:first-child {
@@ -243,7 +177,7 @@ header {
 }
 
 .text-content-instructions {
-  font-size: 12px;
+  font-size: 14px;
 
   display: block;
 

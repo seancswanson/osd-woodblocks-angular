@@ -6,19 +6,8 @@
         <!-- <p class="title-signature">北斎改為一筆</p> -->
         <!-- <p class="title-life">c. October 31, 1760 – May 10, 1849</p> -->
       </div>
-      <div class="text-content-nav">
-        <button class="nav-button" id="about-btn">
-          About
-        </button>
-        <button class="nav-button" id="bio-btn">
-          Artist Bio
-        </button>
-        <button class="nav-button" id="gallery-btn">
-          <div class="gallery-icon gallery-icon-white"></div>
-          Gallery
-        </button>
-      </div>
-      <div class="text-content-wrapper about-section">
+      <app-nav (sectionSet)="setSection($event)"></app-nav>
+      <div class="text-content-wrapper about-section" *ngIf="selectedSection === 'about'">
         <p>Welcome to an interactive gallery of the most iconic collection of Japanese woodblock art.</p>
         <span class="text-content-instructions">To explore all 36 prints in high resolution, select <div
             class="gallery-icon gallery-icon-black"></div> <span class="gallery-span">GALLERY</span> from the bar
@@ -46,7 +35,7 @@
         <p>I appreciate <em>you</em> for checking out <strong>The Majesty of The Thirty-Six Views of Mt. Fuji</strong>.
           ♡ <a href="http://www.seancswanson.com" class="love">Sean Swanson</a></p>
       </div>
-      <div class="text-content-wrapper bio-section">
+      <div class="text-content-wrapper bio-section" *ngIf="selectedSection === 'bio'">
         <div class="text-content bio">
           <p>“Katsushika Hokusai (Japanese, 1760–1849) was a Japanese artist, ukiyo-e painter, and printmaker during the
             Edo period. Born to an artisan family in present-day Tokyo, he began painting at a young age, and became
@@ -70,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="main-image main-collage"></div>
+    <div class="main-image" [ngClass]="{'main-collage': selectedSection === 'about', 'main-portrait': selectedSection === 'bio'}"></div>
 
   <footer>
     Made with ♡ - &copy; 2018 - 2022<a class="footer-link" href="http://www.seancswanson.com">Sean Swanson</a>

@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  selectedSection: string = 'about';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  setSection(event: any) {
+    console.log(event);
+    this.selectedSection = event;
+  }
 }
