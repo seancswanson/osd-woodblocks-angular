@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { OsdViewerComponent } from './osd-viewer/osd-viewer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavComponent } from './nav/nav.component';
+import { TextSectionsComponent } from './text-sections/text-sections.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavComponent } from './nav/nav.component';
     HomeComponent,
     OsdViewerComponent,
     PageNotFoundComponent,
-    NavComponent
+    NavComponent,
+    TextSectionsComponent
   ],
   imports: [
     BrowserModule,

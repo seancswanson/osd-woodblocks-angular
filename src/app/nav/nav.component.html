@@ -1,8 +1,8 @@
 <div class="text-content-nav">
-  <button class="nav-button" id="about-btn" (click)="emitSectionSelection('about')">
+  <button class="nav-button" [ngClass]="{'active-btn': selectedSection === 'about'}" id="about-btn" (click)="emitSectionSelection('about')">
     About
   </button>
-  <button class="nav-button" id="bio-btn" (click)="emitSectionSelection('bio')">
+  <button class="nav-button" [ngClass]="{'active-btn': selectedSection === 'bio'}" id="bio-btn" (click)="emitSectionSelection('bio')">
     Artist Bio
   </button>
   <button class="nav-button" id="gallery-btn" (click)="navigateToViewer()">
