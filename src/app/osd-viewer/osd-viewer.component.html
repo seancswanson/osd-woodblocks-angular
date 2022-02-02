@@ -1,1 +1,30 @@
-<p>osd-viewer works!</p>
+  <div id="openseadragon">
+    <div class="bottom-row">
+      <div class="controls">
+        <div class="controls-button osd-back-button" [routerLink]="['/home']"></div>
+        <div class="controls-button" id="osd-home-button"></div>
+        <div class="controls-button" id="osd-zoom-in-button"></div>
+        <div class="controls-button" id="osd-zoom-out-button"></div>
+        <div class="controls-button" id="osd-full-screen-button"></div>
+      </div>
+      <div class="controls-button source-info-button" (click)="toggleInfoModal()"></div>
+    </div>
+    <div class="controls-info-container" *ngIf="infoModalShown">
+      <div class="controls-info-modal">
+        <div class="modal-block">
+          <div class="control-info-source">
+            <p>Open access, public domain images sourced from:</p>
+            <p>The Metropolitan Museum of Art</p>
+            <p>NYC, NY.</p>
+            <a class="source-link" href="https://www.metmuseum.org/">metmuseum.org</a>
+            <a class="source-link" href="https://twitter.com/metmuseum/">@metmuseum</a>
+          </div>
+          <div class="control-info-logo-container">
+            <img src="../assets/icons/the-met.png" alt="" class="control-info-logo">
+          </div>
+        </div>
+        <p class="github-blurb">For more information about the technology used for this project, please visit the GitHub repo, <a href="https://github.com/seanthaswan/osd-woodblocks-angular">HERE!</a></p>
+      </div>
+    </div>
+    <div class="content-blocker" *ngIf="infoModalShown" (click)="toggleInfoModal()"></div>
+  </div>

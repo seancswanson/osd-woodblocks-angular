@@ -59,6 +59,11 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+.text-content-divider {
+  width: 66%;
+  opacity: 0.3;
+}
+
 .gallery-span {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
@@ -66,7 +71,9 @@
   color: black;
 }
 
-.text-content-divider {
-  width: 66%;
-  opacity: 0.3;
+.gallery-icon-black {
+  margin: 0;
+  margin-left: 3px;
+
+  background-image: url("../../assets/icons/gallery-black.svg");
 }

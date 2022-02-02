@@ -1,0 +1,209 @@
+/* OPENSEADRAGON */
+
+#openseadragon {
+  width: 100vw;
+  height: 100vh;
+}
+
+.openseadragon-canvas {
+  cursor: grab;
+}
+
+#hokusai-1 {
+  font-size: 10px;
+
+  background: pink;
+}
+
+/* OSD Controls */
+
+.controls {
+  display: flex;
+  flex: 1;
+
+  max-width: 350px;
+
+  border-top-right-radius: 5px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.bottom-row {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100vw;
+}
+
+.controls-info-container {
+  z-index: 15;
+}
+
+.modal-block {
+  display: flex;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+.controls-info-modal {
+  font-family: Georgia;
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 50%;
+  justify-content: center;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  transition: 0.4s all ease;
+  transform: translate(-50%, -50%);
+
+  border-radius: 5px;
+  background: white;
+}
+
+.control-info-logo-container {
+  display: flex;
+
+  padding: 10px;
+}
+
+.control-info-source {
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  border-right: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+.control-info-source p {
+  font-style: italic;
+
+  margin-top: 8px;
+}
+
+.source-link {
+  font-weight: bold;
+
+  color: black;
+}
+
+.content-blocker {
+  position: absolute;
+  z-index: 14;
+
+  width: 100vw;
+  height: 100vh;
+
+  cursor: pointer;
+  transition: 0.4s all ease;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.control-info-source p:first-child:first-letter {
+  font-size: 25px;
+  line-height: 12px;
+
+  float: left;
+
+  padding-top: 0;
+  padding-right: 3px;
+  padding-left: 1.5px;
+
+  color: black;
+}
+
+.control-info-logo {
+  width: 75%;
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+.source-link {
+  display: block;
+}
+
+.github-blurb {
+  width: 75%;
+}
+
+.controls-button {
+  width: 100%;
+
+  cursor: pointer;
+  transition: 0.4s all ease;
+
+  background: center center no-repeat;
+  background-size: 40%;
+
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid white;
+  }
+
+  &:focus {
+    border: 1px solid white;
+  }
+}
+
+.source-info-button {
+  width: 7vh;
+  height: 7vh;
+  margin: 0 15px;
+
+  background-image: url("../../assets/icons/info.svg");
+}
+
+.osd-back-button {
+  background-image: url("../../assets/icons/back.svg");
+}
+
+#osd-home-button {
+  background-image: url("../../assets/icons/home.svg");
+}
+
+#osd-zoom-in-button {
+  background-image: url("../../assets/icons/zoomin.svg");
+}
+
+#osd-zoom-out-button {
+  background-image: url("../../assets/icons/zoomout.svg");
+}
+
+#osd-full-screen-button {
+  position: fixed !important;
+  top: 15px;
+  right: 15px;
+
+  display: block !important;
+
+  width: 7vh;
+  height: 7vh;
+
+  background-image: url("../../assets/icons/fullscreen.svg");
+}
+
+@media (max-width: 675px) {
+  .modal-block {
+    flex-direction: column;
+  }
+
+  .control-info-source {
+    margin-bottom: 10px;
+
+    border-right: none;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+  }
+}
